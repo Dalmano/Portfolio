@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: Inconsolata;
+  position: relative;
+  text-align: center;
+  top: 5rem;
+  font-size: 100%;
+  background-color: black;
+}
+
+.container {
+  color: rgb(32, 121, 5);
+  font-size: 20px;
+}
+
+a {
+  color: rgb(32, 121, 5);
+}
