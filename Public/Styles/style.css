@@ -44,7 +44,7 @@ a {
 
 .project-hide .project-show {
   visibility: hidden;
-  width: 450px;
+  width: 350px;
   background-color: black;
   color: #fff;
   text-align: center;
@@ -55,7 +55,7 @@ a {
   bottom: 100%;
   left: 15%;
   margin-left: -60px;
-  top: 30em;
+  top: 40em;
 
   /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
   opacity: 0;
@@ -65,4 +65,37 @@ a {
 .project-hide:hover .project-show {
   visibility: visible;
   opacity: 1;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter p {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
